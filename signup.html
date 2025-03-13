@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - MonParrainage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>MonParrainage</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="how-it-works.html">Comment ça marche</a>
+                <a href="#">Offres</a>
+                <a href="#">Blog</a>
+                <a href="login.html" class="btn-connexion">Connexion</a>
+                <a href="signup.html" class="btn-inscription active">Inscription</a>
+            </div>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="signup-page">
+        <div class="signup-container">
+            <div class="signup-content">
+                <div class="signup-header">
+                    <h1>Créez votre compte</h1>
+                    <p>Rejoignez notre communauté et commencez à économiser</p>
+                </div>
+
+                <form class="signup-form" id="signupForm">
+                    <div class="form-group">
+                        <label for="userType">Je souhaite m'inscrire en tant que :</label>
+                        <div class="user-type-toggle">
+                            <input type="radio" id="filleul" name="userType" value="filleul" checked>
+                            <label for="filleul">Filleul</label>
+                            <input type="radio" id="parrain" name="userType" value="parrain">
+                            <label for="parrain">Parrain</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Prénom</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nom</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <div class="password-input">
+                            <input type="password" id="password" name="password" required>
+                            <i class="fas fa-eye-slash toggle-password"></i>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-bar"></div>
+                            <span class="strength-text">Force du mot de passe</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmer le mot de passe</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            <i class="fas fa-eye-slash toggle-password"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">J'accepte les <a href="#">conditions d'utilisation</a> et la <a href="#">politique de confidentialité</a></label>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Je souhaite recevoir les offres et actualités par email</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Créer mon compte</button>
+                </form>
+
+                <div class="social-signup">
+                    <p>Ou inscrivez-vous avec</p>
+                    <div class="social-buttons">
+                        <button class="btn-social google" id="google-signin">
+                            <i class="fab fa-google"></i>
+                            Google
+                        </button>
+                    </div>
+                </div>
+
+                <div class="login-link">
+                    Déjà membre ? <a href="login.html">Connectez-vous</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <ul>
+                    <li><a href="#">Qui sommes-nous</a></li>
+                    <li><a href="#">Notre mission</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Légal</h3>
+                <ul>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MonParrainage. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html> 

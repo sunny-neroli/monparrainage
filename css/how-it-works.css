@@ -1,0 +1,269 @@
+/* Styles spécifiques pour la page Comment ça marche */
+
+.how-it-works-page {
+    padding-top: 80px;
+}
+
+/* Hero section plus petite */
+.hero-small {
+    background: linear-gradient(135deg, var(--primary-color), #2980b9);
+    padding: 4rem 1rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-small h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-small p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section des étapes détaillées */
+.detailed-steps {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 6rem;
+    position: relative;
+}
+
+.step-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.step-number {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: var(--shadow);
+}
+
+.step-container.reverse .step-number {
+    left: auto;
+    right: -30px;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.step-content p {
+    color: var(--gray);
+    margin-bottom: 2rem;
+}
+
+.step-features {
+    display: grid;
+    gap: 1rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.step-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* Section FAQ */
+.faq {
+    background: var(--gray-light);
+    padding: 4rem 5%;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--white);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.faq-question h3 {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.faq-question i {
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 1.5rem;
+    max-height: 200px;
+}
+
+/* Section CTA */
+.cta {
+    text-align: center;
+    padding: 4rem 5%;
+    background: var(--white);
+}
+
+.cta h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.cta p {
+    color: var(--gray);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .step-container {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .step-container.reverse {
+        flex-direction: column;
+    }
+
+    .step-number {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .step-container.reverse .step-number {
+        right: 0;
+    }
+
+    .hero-small h1 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+} 
