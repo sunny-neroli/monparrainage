@@ -118,7 +118,7 @@ function initializeFormValidation() {
             lastName: document.getElementById('lastName').value,
             email: document.getElementById('email').value,
             password: document.getElementById('password').value,
-            userType: document.querySelector('input[name="userType"]:checked').value
+            userType: 'parrain' // Type d'utilisateur fixé à "parrain"
         };
 
         try {
