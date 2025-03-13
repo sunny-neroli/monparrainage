@@ -1,6 +1,6 @@
-# MonParrainage
+# King Parrain
 
-Une plateforme moderne de parrainage permettant aux utilisateurs de trouver des parrains et des filleuls pour différentes marques.
+Site web de parrainage permettant aux utilisateurs de trouver des parrains et des filleuls pour différentes marques.
 
 ## Fonctionnalités
 
@@ -29,8 +29,8 @@ Une plateforme moderne de parrainage permettant aux utilisateurs de trouver des 
 
 1. Clonez le dépôt :
 ```bash
-git clone https://github.com/votre-username/monparrainage.git
-cd monparrainage
+git clone https://github.com/votre-username/kingparrain.git
+cd kingparrain
 ```
 
 2. Installez les dépendances :
@@ -55,17 +55,17 @@ npm start
 ## Structure du projet
 
 ```
-monparrainage/
+kingparrain/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── services/
 ├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── models/
 │   ├── routes/
-│   └── server.js
-├── css/
-├── js/
-├── images/
-└── index.html
+│   ├── models/
+│   └── controllers/
+└── docs/
 ```
 
 ## Configuration
@@ -73,10 +73,10 @@ monparrainage/
 ### Variables d'environnement
 
 ```env
-DB_HOST=votre_host
-DB_USER=votre_utilisateur
-DB_PASSWORD=votre_mot_de_passe
-DB_NAME=monparrainage
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=password
+DB_NAME=kingparrain
 JWT_SECRET=votre_secret_jwt
 PORT=3000
 ```

@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS monparrainage;
-USE monparrainage;
+CREATE DATABASE IF NOT EXISTS kingparrain;
+USE kingparrain;
 
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
